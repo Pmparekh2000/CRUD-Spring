@@ -27,4 +27,12 @@ public class employeeService {
 		return employeerepository.findById(id);
 	}
 
+	public void deleteEmployee(Long id) {
+		this.employeerepository.deleteById(id);
+	}
+	
+	public void deleteAll() {
+		this.employeerepository.deleteAll();
+	}
+
 }
